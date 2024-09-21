@@ -9,6 +9,8 @@ RUN apk add --no-cache --virtual .buildDeps \
     build-base \
     libusb-dev \
     librtlsdr-dev \
+    soapy-sdr \
+    soapy-sdr-dev \
     openssl-dev \
     cmake \
     git
@@ -35,6 +37,7 @@ ENV LANG C.UTF-8
 
 RUN apk add --no-cache libusb \
     librtlsdr \
+    soapy-sdr \
     sed
 WORKDIR /root
 COPY --from=builder /build/root/ /
