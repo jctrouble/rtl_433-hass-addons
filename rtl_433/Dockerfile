@@ -9,6 +9,7 @@ RUN apk add --no-cache --virtual .buildDeps \
     build-base \
     libusb-dev \
     librtlsdr-dev \
+    openssl-dev \
     cmake \
     git
 
