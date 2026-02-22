@@ -12,6 +12,7 @@
   "options": {
     "mqtt_host": "",
     "mqtt_port": 1883,
+    "tls": false,
     "mqtt_user": "",
     "mqtt_password": "",
     "mqtt_retain": true,
@@ -25,6 +26,7 @@
   "schema": {
     "mqtt_host": "str?",
     "mqtt_port": "int?",
+    "tls": "bool",
     "mqtt_user": "str?",
     "mqtt_password": "str?",
     "mqtt_retain": "bool",
