@@ -3,7 +3,7 @@ FROM ${BUILD_FROM} as builder
 
 ARG rtl433GitRevision=network_tls
 
-RUN wget https://raw.githubusercontent.com/jctrouble/rtl_433/refs/heads/${rtl433GitRevision}/examples/rtl_433_mqtt_hass.py -O rtl_433_mqtt_hass.py
+RUN wget https://raw.githubusercontent.com/jctrouble/rtl_433/e5ac23ebfd031cca26b3d4fb3342eb6ca1a8f395/examples/rtl_433_mqtt_hass.py
 
 FROM ${BUILD_FROM}
 
